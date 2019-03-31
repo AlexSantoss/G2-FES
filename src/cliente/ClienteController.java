@@ -14,10 +14,8 @@ public class ClienteController {
 
     //verifica histórico do cliente, retorna false caso histórico seja inválido
     @FXML
-    public static Historico verificaHistorico(Cliente c){
-        Historico historico;
+    public static boolean verificaHistorico(Cliente c){
 
-        return historico;
     }
 
 
