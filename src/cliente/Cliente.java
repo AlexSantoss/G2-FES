@@ -1,20 +1,42 @@
 package cliente;
 
+import auxiliar.Address;
+import auxiliar.CPF;
+
 public class Cliente {
-
+    private String name;
+    private Address address;
+    private CPF cpf;
     private int id;
-    private String nome;
-    private String cpf;
-    private String endereço;
-    private boolean habilitado;
-    private boolean carroAlugado;
 
-    public Cliente(int id, String nome, String cpf, String endereço) throws Exception{
-        this.id = id;
-        this.nome = nome;
-        this.endereço = endereço;
-        setCpf(cpf);
+    Cliente(String name, Address address, CPF cpf){
+        setName(name);
+        setAddress(address);
+        setCPF(cpf);
+    }
 
+    public CPF getCPF(){
+        return cpf;
+    }
+
+    public void setCPF(CPF cpf){
+        this.cpf = cpf;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
     }
 
     public int getId() {
@@ -25,27 +47,10 @@ public class Cliente {
         this.id = id;
     }
 
-    public String getNome() {
-        return nome;
+    public String toString(){
+        return "Nome: " + name
+                + " CPF: " + cpf
+                + " Endereco: " + address;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public String getCpf() {
-        return cpf;
-    }
-
-    public void setCpf(String cpf) throws Exception {
-        if(!cpf.matches("\\d{3}.\\d{3}.\\d{3}-\\d{2}")) throw new Exception("CPF Formato Inválido");
-    }
-
-    public String getEndereço() {
-        return endereço;
-    }
-
-    public void setEndereço(String endereço) {
-        this.endereço = endereço;
-    }
 }

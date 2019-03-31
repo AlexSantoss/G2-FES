@@ -1,24 +1,46 @@
 package cliente;
 
+import auxiliar.Address;
+import auxiliar.CPF;
+import java.net.URL;
+import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.TextField;
 
-public class ClienteController {
 
+public class ClienteController implements Initializable {
 
-    //cadastra novo cliente no banco de dados
     @FXML
-    public static boolean cadastraCliente(Cliente c){
-        return true;
+    private TextField nameField;
+    @FXML
+    private TextField ruaField;
+    @FXML
+    private TextField cepField;
+    @FXML
+    private TextField numberField;
+    @FXML
+    private TextField cpfField;
+
+    @FXML
+    private void handleButtonAction(ActionEvent event) {
+        Address address = null;
+        CPF cpf = null;
+        try{
+            address = new Address(ruaField.getText(), cepField.getText(),numberField.getText());
+            cpf = new CPF(cpfField.getText());
+        }catch(Exception e){
+            System.out.println(e);
+        }finally{
+            Cliente c = new Cliente(nameField.getText(), address, cpf);
+            System.out.println(c);
+        }
     }
 
-
-    //verifica histórico do cliente, retorna false caso histórico seja inválido
-    @FXML
-    public static boolean verificaHistorico(Cliente c){
-
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+        // TODO
     }
-
-
-
 
 }

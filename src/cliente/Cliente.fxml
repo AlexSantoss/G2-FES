@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cliente.ClienteController">
+    <children>
+        <TextFlow layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="775.0">
+            <children>
+                <Text fx:id="nameText" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome" />
+                <TextField fx:id="nameField" prefHeight="25.0" prefWidth="552.0" />
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="CPF" />
+                <TextField fx:id="cpfField" prefHeight="25.0" prefWidth="170.0" />
+            </children>
+        </TextFlow>
+        <TextFlow layoutX="26.0" layoutY="45.0" prefHeight="25.0" prefWidth="763.0">
+            <children>
+                <Text fx:id="ruaText" strokeType="OUTSIDE" strokeWidth="0.0" text="Rua" />
+                <TextField fx:id="ruaField" prefHeight="25.0" prefWidth="493.0" />
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="N" />
+                <TextField fx:id="numberField" prefHeight="25.0" prefWidth="71.0" />
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="CEP" />
+                <TextField fx:id="cepField" />
+            </children>
+        </TextFlow>
+        <Button fx:id="botao" layoutX="376.0" layoutY="219.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Cadastrar" />
+    </children>
+</AnchorPane>
