@@ -19,7 +19,11 @@ public class Address {
 		if(street.trim().length() > 0)
 			this.street = street.trim();
 		else
+<<<<<<< HEAD
+			throw new Exception("Endereço vazio");
+=======
 			throw new Exception("EndereÃ§o vazio");
+>>>>>>> e5d395e1e6dfcb69a27e562d78753b222ea1ae12
 	}
 
 	public String getCep() {

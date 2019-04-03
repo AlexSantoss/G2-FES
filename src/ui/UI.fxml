@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="856.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.UIController">
+   <children>
+      <VBox layoutX="-6.0" prefHeight="700.0" prefWidth="296.0" style="-fx-background-color: #E1E5F2;">
+         <children>
+            <Label prefHeight="112.0" prefWidth="294.0" snapToPixel="false" style="-fx-background-color: #04018C;" text=" VoceAluga" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="55.0" />
+               </font>
+            </Label>
+            <Accordion>
+               <panes>
+                <TitledPane animated="false" text="Cliente">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="103.0" prefWidth="294.0">
+                           <children>
+                              <HBox prefHeight="25.0" prefWidth="294.0">
+                                 <children>
+                                    <Label text="Informações" translateX="30.0" translateY="3.0" />
+                                 </children>
+                              </HBox>
+                              <HBox layoutY="25.0" prefHeight="25.0" prefWidth="294.0">
+                                 <children>
+                                    <Label text="Requisitar reservas" translateX="30.0" />
+                                 </children>
+                              </HBox>
+                              <HBox layoutY="50.0" prefHeight="25.0" prefWidth="294.0">
+                                 <children>
+                                    <Label text="Histórico" translateX="30.0" />
+                                 </children>
+                              </HBox>
+                              <HBox layoutY="78.0" onMouseClicked="#handleButtonAction" prefHeight="25.0" prefWidth="294.0">
+                                 <children>
+                                    <Label text="Cadastro" translateX="30.0" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </TitledPane>
+                <TitledPane animated="false" text="Veículo">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="114.0" prefWidth="294.0">
+                           <children>
+                              <HBox prefHeight="25.0" prefWidth="294.0">
+                                 <children>
+                                    <Label text="Serviços de Manutenção" translateX="30.0" translateY="3.0" />
+                                 </children>
+                              </HBox>
+                              <HBox layoutY="25.0" prefHeight="25.0" prefWidth="294.0">
+                                 <children>
+                                    <Label text="Informações" translateX="30.0" translateY="3.0" />
+                                 </children>
+                              </HBox>
+                              <HBox layoutY="78.0" prefHeight="25.0" prefWidth="294.0">
+                                 <children>
+                                    <Label text="-----" translateX="30.0" translateY="3.0" />
+                                 </children>
+                              </HBox>
+                              <HBox layoutY="50.0" prefHeight="25.0" prefWidth="294.0">
+                                 <children>
+                                    <Label text="Revisão" translateX="30.0" translateY="3.0" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </TitledPane>
+                <TitledPane animated="false" text="Aluguel">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="233.0" prefWidth="294.0">
+                           <children>
+                              <HBox prefHeight="25.0" prefWidth="294.0">
+                                 <children>
+                                    <Label text="Extensão de Prazo" translateX="30.0" translateY="3.0" />
+                                 </children>
+                              </HBox>
+                              <HBox layoutY="178.0" prefHeight="25.0" prefWidth="294.0">
+                                 <children>
+                                    <Label text="Desistência" translateX="30.0" translateY="3.0" />
+                                 </children>
+                              </HBox>
+                              <HBox layoutY="153.0" prefHeight="25.0" prefWidth="294.0">
+                                 <children>
+                                    <Label text="Upgrade/Downgrade" translateX="30.0" translateY="3.0" />
+                                 </children>
+                              </HBox>
+                              <HBox layoutY="128.0" prefHeight="25.0" prefWidth="294.0">
+                                 <children>
+                                    <Label text="Devolução de Carros" translateX="30.0" translateY="3.0" />
+                                 </children>
+                              </HBox>
+                              <HBox layoutY="103.0" prefHeight="25.0" prefWidth="294.0">
+                                 <children>
+                                    <Label text="Transferência de Carros" translateX="30.0" translateY="3.0" />
+                                 </children>
+                              </HBox>
+                              <HBox layoutY="78.0" prefHeight="25.0" prefWidth="294.0">
+                                 <children>
+                                    <Label text="Alocar Carros" translateX="30.0" translateY="3.0" />
+                                 </children>
+                              </HBox>
+                              <HBox layoutY="50.0" prefHeight="25.0" prefWidth="294.0">
+                                 <children>
+                                    <Label text="Locação Imediata" translateX="30.0" translateY="3.0" />
+                                 </children>
+                              </HBox>
+                              <HBox layoutY="25.0" prefHeight="25.0" prefWidth="294.0">
+                                 <children>
+                                    <Label text="Reserva" translateX="30.0" translateY="3.0" />
+                                 </children>
+                              </HBox>
+                              <HBox layoutY="203.0" prefHeight="25.0" prefWidth="294.0">
+                                 <children>
+                                    <Label text="Programa de Fidelidade" translateX="30.0" translateY="3.0" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </TitledPane>
+                  <TitledPane animated="false" layoutX="10.0" layoutY="60.0" text="Financeiro">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <HBox prefHeight="25.0" prefWidth="294.0">
+                                 <children>
+                                    <Label text="Impostos Locais" translateX="30.0" translateY="3.0" />
+                                 </children>
+                              </HBox>
+                              <HBox layoutY="154.0" prefHeight="25.0" prefWidth="294.0">
+                                 <children>
+                                    <Label text="Locação Grátis" translateX="30.0" translateY="3.0" />
+                                 </children>
+                              </HBox>
+                              <HBox layoutY="128.0" prefHeight="25.0" prefWidth="294.0">
+                                 <children>
+                                    <Label text="Venda de Carros" translateX="30.0" translateY="3.0" />
+                                 </children>
+                              </HBox>
+                              <HBox layoutY="103.0" prefHeight="25.0" prefWidth="294.0">
+                                 <children>
+                                    <Label text="Atraso" translateX="30.0" translateY="3.0" />
+                                 </children>
+                              </HBox>
+                              <HBox layoutY="78.0" prefHeight="25.0" prefWidth="294.0">
+                                 <children>
+                                    <Label text="Antecipado" translateX="30.0" translateY="3.0" />
+                                 </children>
+                              </HBox>
+                              <HBox layoutY="50.0" prefHeight="25.0" prefWidth="294.0">
+                                 <children>
+                                    <Label text="Taxa de Retorno" translateX="30.0" translateY="3.0" />
+                                 </children>
+                              </HBox>
+                              <HBox layoutY="25.0" prefHeight="25.0" prefWidth="294.0">
+                                 <children>
+                                    <Label text="Pagamento" translateX="30.0" translateY="3.0" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </TitledPane>
+               </panes>
+            </Accordion>
+         </children>
+      </VBox>
+      <Pane fx:id="LoadPane" layoutX="290.0" prefHeight="706.0" prefWidth="568.0" />
+   </children>
+</AnchorPane>
