@@ -22,7 +22,6 @@ public class UIController implements Initializable {
 	private void handleButtonAction() throws IOException {
 		Pane newPane =  FXMLLoader.load(getClass().getResource("/cliente/Cliente.fxml"));
 		LoadPane.getChildren().add(newPane);
-
 	}
 	
 	

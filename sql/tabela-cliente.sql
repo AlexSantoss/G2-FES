@@ -6,3 +6,19 @@ create table if not exists cliente(
     num int not null,
     primary key(cpf)
 );
+
+create table if not exists veiculo(
+    modelo varchar(255) not null,
+    classe char not null,
+    disponiveis int not null,
+    filialOrigem varchar(255),
+
+    alugado boolean,
+    inicioA date,
+    fimA date,
+
+    manutencao boolean,
+    inicioM date,
+    fimM date,
+    primary key (modelo)
+);

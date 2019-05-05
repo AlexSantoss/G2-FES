@@ -14,24 +14,26 @@ public class CPF {
 
 	public void setCPF(String cpf) throws Exception{
 		if(cpf.charAt(3) == '.' && cpf.charAt(7) == '.' && cpf.charAt(11) == '-') {
-			int soma=0;
-			for(int idx=0, aux=10; idx < 11; idx++, aux--) {
-				if(idx != 3 && idx != 7) soma += Character.getNumericValue(cpf.charAt(idx)) * aux;
-				else aux = aux+1;
-			}
-			int resto1 = (soma*10)%11;
-			if(resto1 == 10) resto1 = 0;
+			this.cpf = cpf;
 
-			soma=0;
-			for(int idx=0, aux=11; idx < 13; idx++, aux--) {
-				if(idx != 3 && idx != 7 && idx != 11) soma += Character.getNumericValue(cpf.charAt(idx)) * aux;
-				else aux = aux+1;
-			}
-			int resto2 = (soma*10)%11;
-			if(resto2 == 10) resto2 = 0;
-
-			if(resto1 == Character.getNumericValue(cpf.charAt(12)) && resto2 == Character.getNumericValue(cpf.charAt(13))) this.cpf = cpf;
-			else throw new Exception("CPF invalido");
+//			int soma=0;
+//			for(int idx=0, aux=10; idx < 11; idx++, aux--) {
+//				if(idx != 3 && idx != 7) soma += Character.getNumericValue(cpf.charAt(idx)) * aux;
+//				else aux = aux+1;
+//			}
+//			int resto1 = (soma*10)%11;
+//			if(resto1 == 10) resto1 = 0;
+//
+//			soma=0;
+//			for(int idx=0, aux=11; idx < 13; idx++, aux--) {
+//				if(idx != 3 && idx != 7 && idx != 11) soma += Character.getNumericValue(cpf.charAt(idx)) * aux;
+//				else aux = aux+1;
+//			}
+//			int resto2 = (soma*10)%11;
+//			if(resto2 == 10) resto2 = 0;
+//
+//			if(resto1 == Character.getNumericValue(cpf.charAt(12)) && resto2 == Character.getNumericValue(cpf.charAt(13))) this.cpf = cpf;
+//			else throw new Exception("CPF invalido");
 		}
 		else
 			throw new Exception("CPF malformado");
