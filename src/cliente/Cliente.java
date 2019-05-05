@@ -53,4 +53,12 @@ public class Cliente {
                 + " Endereco: " + address;
     }
 
+    public String insert(){
+        return "(\'" + name + "\'"
+                + ",\'" + cpf + "\'"
+                + ",\'" + address.getStreet() + "\'"
+                + ",\'" + address.getCep() + "\'"
+                + "," + address.getHouseNumber() + ")"
+                ;
+    }
 }

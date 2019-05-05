@@ -23,7 +23,12 @@
                   <Insets bottom="10.0" />
                </VBox.margin>
             </TextField>
-            <TextField fx:id="ruaField" alignment="CENTER" promptText="Rua, Numero">
+            <TextField fx:id="ruaField" alignment="CENTER" promptText="Rua">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="numberField" alignment="CENTER" promptText="Numero">
                <VBox.margin>
                   <Insets bottom="10.0" />
                </VBox.margin>
