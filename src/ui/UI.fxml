@@ -64,7 +64,7 @@
                               </HBox>
                               <HBox layoutY="78.0" prefHeight="25.0" prefWidth="294.0">
                                  <children>
-                                    <Label text="-----" translateX="30.0" translateY="3.0" />
+                                    <Label text="Cadastro" onMouseClicked="#handleCadastrarVeiculo" translateX="30.0" translateY="3.0" />
                                  </children>
                               </HBox>
                               <HBox layoutY="50.0" prefHeight="25.0" prefWidth="294.0">

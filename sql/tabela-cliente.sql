@@ -9,7 +9,7 @@ create table if not exists cliente(
 
 create table if not exists veiculo(
     modelo varchar(255) not null,
-    classe char not null,
+    classe varchar(10) not null,
     disponiveis int not null,
     filialOrigem varchar(255),
 

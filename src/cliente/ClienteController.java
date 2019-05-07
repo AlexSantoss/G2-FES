@@ -48,7 +48,6 @@ public class ClienteController implements Initializable {
                 e.printStackTrace();
             }
             a.FecharConexao();
-            System.out.println(a.statusConection());
         }
     }
 

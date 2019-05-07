@@ -8,6 +8,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.*;
 import cliente.*;
 
@@ -31,4 +32,8 @@ public class UIController implements Initializable {
 		
 	}
 
+	public void handleCadastrarVeiculo() throws IOException{
+		Pane newPane =  FXMLLoader.load(getClass().getResource("/veiculo/Cadastrar.fxml"));
+		LoadPane.getChildren().add(newPane);
+	}
 }
