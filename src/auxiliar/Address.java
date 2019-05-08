@@ -5,7 +5,7 @@ public class Address {
 	private String cep;
 	private String houseNumber;
 	
-	public Address(String street, String cep, String houseNumber) throws Exception{
+	public Address(String street, String cep, String houseNumber){
 		setStreet(street);
 		setCep(cep);
 		setHouseNumber(houseNumber);
@@ -15,22 +15,22 @@ public class Address {
 		return street;
 	}
 
-	public void setStreet(String street) throws Exception {
+	public void setStreet(String street) {
 		if(street.trim().length() > 0)
 			this.street = street.trim();
 		else
-			throw new Exception("Endereço vazio");
+			throw new IllegalArgumentException("Endereço vazio");
 	}
 
 	public String getCep() {
 		return cep;
 	}
 
-	public void setCep(String cep) throws Exception {
-		if(cep.charAt(5) == '-' && cep.length() == 9)
+	public void setCep(String cep) {
+		if(cep.length() == 9 && cep.charAt(5) == '-')
 			this.cep = cep;
 		else
-			throw new Exception("CEP: " + cep + " malformado");
+			throw new IllegalArgumentException("CEP: " + cep + " malformado");
 	}
 
 	public String getHouseNumber() {
