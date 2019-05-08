@@ -22,6 +22,7 @@ public class UIController implements Initializable {
 	@FXML
 	private void handleButtonAction() throws IOException {
 		Pane newPane =  FXMLLoader.load(getClass().getResource("/cliente/Cliente.fxml"));
+		if(LoadPane.getChildren().size() > 0) LoadPane.getChildren().remove(0);
 		LoadPane.getChildren().add(newPane);
 	}
 	
@@ -34,6 +35,7 @@ public class UIController implements Initializable {
 
 	public void handleCadastrarVeiculo() throws IOException{
 		Pane newPane =  FXMLLoader.load(getClass().getResource("/veiculo/Cadastrar.fxml"));
+		if(LoadPane.getChildren().size() > 0) LoadPane.getChildren().remove(0);
 		LoadPane.getChildren().add(newPane);
 	}
 }
