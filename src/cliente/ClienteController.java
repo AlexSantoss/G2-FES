@@ -53,7 +53,17 @@ public class ClienteController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+        cpfField.textProperty().addListener((observable, oldValue, newValue) -> {
+            if(newValue.length() > 14){
+                cpfField.setText(oldValue);
+            } else if(newValue.length() > oldValue.length()){
+                if(newValue.length() == 3 || newValue.length() == 7 ) cpfField.setText(newValue + '.');
+                else if(newValue.length() == 11) cpfField.setText(newValue + '-');
+            } else if (newValue.length() < oldValue.length()){
+                if(oldValue.charAt(oldValue.length()-1) == '.' || oldValue.charAt(oldValue.length()-1) == '-') cpfField.setText(newValue.substring(0, newValue.length()-1));
+            }
+            System.out.println("textfield changed from " + oldValue + " to " + newValue);
+        });
     }
 
 }
