@@ -2,6 +2,8 @@ package cliente;
 
 import auxiliar.Address;
 import auxiliar.CPF;
+
+import java.io.IOException;
 import java.net.URL;
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -10,8 +12,12 @@ import java.util.ResourceBundle;
 import bd.MySQL;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
 
 public class ClienteController implements Initializable {
@@ -26,7 +32,6 @@ public class ClienteController implements Initializable {
     private TextField numberField;
     @FXML
     private TextField cpfField;
-
     @FXML
     private void handleButtonAction(ActionEvent event) {
         Address address = null;
@@ -49,6 +54,15 @@ public class ClienteController implements Initializable {
             }
             a.FecharConexao();
         }
+      
+    }
+    @FXML
+    private void retornaBusca(ActionEvent event) throws IOException {
+    	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/cliente/ResultadoBusca.fxml"));
+    	Parent root1 = (Parent) fxmlLoader.load();
+    	Stage stage = new Stage();
+    	stage.setScene(new Scene(root1));
+    	stage.show();
     }
 
     @Override
@@ -65,5 +79,7 @@ public class ClienteController implements Initializable {
             System.out.println("textfield changed from " + oldValue + " to " + newValue);
         });
     }
+    
+    
 
 }

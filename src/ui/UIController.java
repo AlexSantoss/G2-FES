@@ -38,4 +38,11 @@ public class UIController implements Initializable {
 		if(LoadPane.getChildren().size() > 0) LoadPane.getChildren().remove(0);
 		LoadPane.getChildren().add(newPane);
 	}
+
+	public void handleConsultaCliente() throws IOException{
+		Pane newPane =  FXMLLoader.load(getClass().getResource("/cliente/Consulta.fxml"));
+		if(LoadPane.getChildren().size() > 0) LoadPane.getChildren().remove(0);
+		LoadPane.getChildren().add(newPane);
+	}
+	
 }
