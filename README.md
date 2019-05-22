@@ -1,2 +1,2 @@
 # G2-FES
-[Docs](alexsantoss.github.io/g2-fes)
+[Docs](https://alexsantoss.github.io/G2-FES)
