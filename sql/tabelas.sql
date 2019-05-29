@@ -22,3 +22,4 @@ create table if not exists veiculo(
     fimM date,
     primary key (modelo)
 );
+
