@@ -22,7 +22,7 @@
                   <Font size="14.0" />
                </font>
             </Label>
-            <TextField fx:id="nameField" alignment="CENTER" promptText="Nome">
+            <TextField fx:id="campoNome" alignment="CENTER" promptText="Nome">
                <opaqueInsets>
                   <Insets />
                </opaqueInsets>
@@ -30,7 +30,7 @@
                   <Insets bottom="10.0" />
                </VBox.margin>
             </TextField>
-            <TextField fx:id="cpfField" alignment="CENTER" promptText="CPF - XXX.XXX.XXX-XX">
+            <TextField fx:id="campoCPF" alignment="CENTER" promptText="CPF - XXX.XXX.XXX-XX">
                <VBox.margin>
                   <Insets bottom="10.0" />
                </VBox.margin>

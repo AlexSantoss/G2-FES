@@ -27,36 +27,29 @@ import javafx.stage.Stage;
 public class ClienteController implements Initializable {
 
     @FXML
-    private TextField nameField;
+    private TextField campoNome;
     @FXML
-    private TextField ruaField;
+    private TextField campoCPF;
     @FXML
-    private TextField cepField;
+    private TextField campoNascimento;
     @FXML
-    private TextField numberField;
+    private TextField campoEmissaoCNH;
     @FXML
-    private TextField cpfField;
-    @FXML
+
     private void handleButtonAction(ActionEvent event) {
-        Address address = null;
         CPF cpf = null;
         try{
-            address = new Address(ruaField.getText(), cepField.getText(),numberField.getText());
-            cpf = new CPF(cpfField.getText());
-        }catch(Exception e){
-            System.out.println(e);
-        }finally{
-            Cliente c = new Cliente(nameField.getText(), address, cpf);
+            cpf = new CPF(campoCPF.getText());
+            Cliente c = new Cliente(campoNome.getText(), cpf, campoNascimento.getText(), campoEmissaoCNH.getText());
             MySQL a = new MySQL();
             Connection con = a.getConexaoMySQL();
 
-            String query = "insert into cliente values " + c.insert();
-            try {
-                con.prepareStatement(query).execute();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
+            String query = "insert into Cliente values " + c.insert();
+            con.prepareStatement(query).execute();
+
             a.FecharConexao();
+        }catch(Exception e){
+            System.out.println(e);
         }
 
     }
@@ -67,7 +60,7 @@ public class ClienteController implements Initializable {
         ResourceBundle rb = new ResourceBundle() {
             @Override
             protected Object handleGetObject(String key) {
-                return nameField.getText();
+                return campoNome.getText();
             }
 
             @Override
@@ -84,14 +77,14 @@ public class ClienteController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        cpfField.textProperty().addListener((observable, oldValue, newValue) -> {
+        campoCPF.textProperty().addListener((observable, oldValue, newValue) -> {
             if(newValue.length() > 14){
-                cpfField.setText(oldValue);
+                campoCPF.setText(oldValue);
             } else if(newValue.length() > oldValue.length()){
-                if(newValue.length() == 3 || newValue.length() == 7 ) cpfField.setText(newValue + '.');
-                else if(newValue.length() == 11) cpfField.setText(newValue + '-');
+                if(newValue.length() == 3 || newValue.length() == 7 ) campoCPF.setText(newValue + '.');
+                else if(newValue.length() == 11) campoCPF.setText(newValue + '-');
             } else if (newValue.length() < oldValue.length()){
-                if(oldValue.charAt(oldValue.length()-1) == '.' || oldValue.charAt(oldValue.length()-1) == '-') cpfField.setText(newValue.substring(0, newValue.length()-1));
+                if(oldValue.charAt(oldValue.length()-1) == '.' || oldValue.charAt(oldValue.length()-1) == '-') campoCPF.setText(newValue.substring(0, newValue.length()-1));
             }
             System.out.println("textfield changed from " + oldValue + " to " + newValue);
         });

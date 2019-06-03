@@ -10,7 +10,7 @@
    <children>
       <VBox alignment="CENTER" layoutX="76.0" layoutY="30.0" prefHeight="312.0" prefWidth="182.0">
          <children>
-            <TextField fx:id="nameField" alignment="CENTER" promptText="Nome">
+            <TextField fx:id="campoNome" alignment="CENTER" promptText="Nome">
                <opaqueInsets>
                   <Insets />
                </opaqueInsets>
@@ -18,22 +18,17 @@
                   <Insets bottom="10.0" />
                </VBox.margin>
             </TextField>
-            <TextField fx:id="cpfField" promptText="CPF - XXX.XXX.XXX-XX">
+            <TextField fx:id="campoCPF" promptText="CPF - XXX.XXX.XXX-XX">
                <VBox.margin>
                   <Insets bottom="10.0" />
                </VBox.margin>
             </TextField>
-            <TextField fx:id="ruaField" alignment="CENTER" promptText="Rua">
+            <TextField fx:id="campoNascimento" alignment="CENTER" promptText="Nascimento">
                <VBox.margin>
                   <Insets bottom="10.0" />
                </VBox.margin>
             </TextField>
-            <TextField fx:id="numberField" alignment="CENTER" promptText="Numero">
-               <VBox.margin>
-                  <Insets bottom="10.0" />
-               </VBox.margin>
-            </TextField>
-            <TextField fx:id="cepField" alignment="CENTER" promptText="CEP XXXXX-XXX">
+            <TextField fx:id="campoEmissaoCNH" alignment="CENTER" promptText="Emissao CNH">
                <VBox.margin>
                   <Insets bottom="10.0" />
                </VBox.margin>

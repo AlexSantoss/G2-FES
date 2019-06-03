@@ -11,9 +11,8 @@
         <columns>
           <TableColumn prefWidth="239.0" text="Nome" fx:id="columnName"/>
           <TableColumn prefWidth="84.0" text="CPF" fx:id="columnCPF"/>
-            <TableColumn prefWidth="177.0" text="Rua" fx:id="columnRua"/>
-            <TableColumn minWidth="0.0" prefWidth="72.0" text="Número" fx:id="columnNum" />
-            <TableColumn minWidth="0.0" prefWidth="100.0" text="CEP" fx:id="columnCEP"/>
+            <TableColumn prefWidth="177.0" text="Nascimento" fx:id="columnNascimento"/>
+            <TableColumn prefWidth="72.0" text="Emissao CNH" fx:id="columnEmissaoCNH" />
         </columns>
       </TableView>
    </children>

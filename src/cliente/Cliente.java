@@ -1,18 +1,35 @@
 package cliente;
 
-import auxiliar.Address;
 import auxiliar.CPF;
 
 public class Cliente {
     private String name;
-    private Address address;
     private CPF cpf;
-    private int id;
+    private String nascimento;
+    private String emissaoCNH;
 
-    Cliente(String name, Address address, CPF cpf){
+
+    Cliente(String name, CPF cpf, String nascimento, String emissaoCNH){
         setName(name);
-        setAddress(address);
         setCPF(cpf);
+        setNascimento(nascimento);
+        setEmissaoCNH(emissaoCNH);
+    }
+
+    public String getNascimento() {
+        return nascimento;
+    }
+
+    public void setNascimento(String nascimento) {
+        this.nascimento = nascimento;
+    }
+
+    public String getEmissaoCNH() {
+        return emissaoCNH;
+    }
+
+    public void setEmissaoCNH(String emissaoCNH) {
+        this.emissaoCNH = emissaoCNH;
     }
 
     public CPF getCPF(){
@@ -31,34 +48,17 @@ public class Cliente {
         this.name = name;
     }
 
-    public Address getAddress() {
-        return address;
-    }
-
-    public void setAddress(Address address) {
-        this.address = address;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public String toString(){
         return "Nome: " + name
-                + " CPF: " + cpf
-                + " Endereco: " + address;
+                + " CPF: " + cpf;
     }
 
     public String insert(){
-        return "(\'" + name + "\'"
-                + ",\'" + cpf + "\'"
-                + ",\'" + address.getStreet() + "\'"
-                + ",\'" + address.getCep() + "\'"
-                + "," + address.getHouseNumber() + ")"
-                ;
+        return "("
+                + "\'"  + cpf + "\'"
+                + ",\'" + name + "\'"
+                + ",\'" + nascimento + "\'"
+                + ",\'" + emissaoCNH + "\'"
+                + ")";
     }
 }

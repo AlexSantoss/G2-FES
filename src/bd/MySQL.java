@@ -1,5 +1,7 @@
 package bd;
 
+import veiculo.Veiculo;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -37,6 +39,16 @@ public class MySQL {
         }
     }
 
+    public void insert(Veiculo v){
+        String query = "insert into Veiculo values " + v.insert();
+        Connection con = getConexaoMySQL();
+        try {
+            con.prepareStatement(query).execute();
+            FecharConexao();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 
 
     public String statusConection() {

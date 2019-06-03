@@ -6,76 +6,62 @@ import javafx.beans.property.SimpleStringProperty;
 public class ClienteModel {
     private SimpleStringProperty nome;
     private SimpleStringProperty CPF;
-    private SimpleStringProperty rua;
-    private SimpleStringProperty num;
-    private SimpleStringProperty CEP;
+    private SimpleStringProperty nascimento;
+    private SimpleStringProperty emissaoCNH;
 
-    public ClienteModel(String nome, String CPF, String rua, String num, String CEP){
+    public ClienteModel(String nome, String CPF, String nascimento, String emissaoCNH){
         this.nome = new SimpleStringProperty(nome);
         this.CPF = new SimpleStringProperty(CPF);
-        this.rua = new SimpleStringProperty(rua);
-        this.num = new SimpleStringProperty(num);
-        this.CEP = new SimpleStringProperty(CEP);
+        this.nascimento = new SimpleStringProperty(nascimento);
+        this.emissaoCNH = new SimpleStringProperty(emissaoCNH);
     }
 
     public String getNome() {
         return nome.get();
     }
 
-    public SimpleStringProperty nomeProperty() {
-        return nome;
-    }
-
     public void setNome(String nome) {
         this.nome.set(nome);
+    }
+
+    public SimpleStringProperty nomeProperty() {
+        return nome;
     }
 
     public String getCPF() {
         return CPF.get();
     }
 
-    public SimpleStringProperty CPFProperty() {
-        return CPF;
-    }
-
     public void setCPF(String CPF) {
         this.CPF.set(CPF);
     }
 
-    public String getRua() {
-        return rua.get();
+    public SimpleStringProperty CPFProperty() {
+        return CPF;
     }
 
-    public SimpleStringProperty ruaProperty() {
-        return rua;
+    public String getNascimento() {
+        return nascimento.get();
     }
 
-    public void setRua(String rua) {
-        this.rua.set(rua);
+    public void setNascimento(String nascimento) {
+        this.nascimento.set(nascimento);
     }
 
-    public String getNum() {
-        return num.get();
+    public SimpleStringProperty nascimentoProperty() {
+        return nascimento;
     }
 
-    public SimpleStringProperty numProperty() {
-        return num;
+    public String getEmissaoCNH() {
+        return emissaoCNH.get();
     }
 
-    public void setNum(String num) {
-        this.num.set(num);
+    public void setNum(String emissaoCNH) {
+        this.emissaoCNH.set(emissaoCNH);
     }
 
-    public String getCEP() {
-        return CEP.get();
-    }
-
-    public SimpleStringProperty CEPProperty() {
-        return CEP;
-    }
-
-    public void setCEP(String CEP) {
-        this.CEP.set(CEP);
+    public SimpleStringProperty emissaoCNHProperty() {
+        return emissaoCNH;
     }
 }
 

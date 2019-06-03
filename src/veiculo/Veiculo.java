@@ -3,62 +3,34 @@ package veiculo;
 import auxiliar.Address;
 
 import java.sql.Date;
+import java.util.Calendar;
 
-//create table if not exists veiculo(
-//        modelo varchar(255) not null,
-//        classe char not null,
-//        disponiveis int not null,
-//        filialOrigem varchar(255),
-//
-//        alugado boolean,
-//        inicioA date,
-//        fimA date,
-//
-//        manutencao boolean,
-//        inicioM date,
-//        fimM date,
-//        primary key (modelo)
-//        );
 public class Veiculo {
-    String modelo;
-    String classe;
-    Address filialOrigem;
+    private String placa;
+    private String filial;
+    private String modelo;
+    private String grupo;
+    private String ultManutencao;
+    private int kmRodados;
 
-    boolean alugado;
-    Date inicioA;
-    Date fimA;
-
-    boolean manutencao;
-    Date inicioM;
-    Date fimM;
-
-    public Veiculo(String modelo, String classe, int disp, Address origem){
+    public Veiculo(String modelo, String placa, String filial, String grupo){
         this.modelo = modelo;
-        this.classe = classe;
-        this.filialOrigem = origem;
+        this.placa = placa;
+        this.filial = filial;
+        this.grupo = grupo;
 
-        this.alugado = false;
-        this.manutencao = false;
+        this.kmRodados = 0;
+        this.ultManutencao = "2019-06-03";
     }
 
-    public boolean isManutencao(){
-        return manutencao;
-    }
-
-    public void setManutencao(boolean man, Date inicio, Date fim){
-        this.inicioM = inicio;
-        this.fimM = fim;
-        manutencao = man;
-    }
-
-    public boolean alugar(boolean alug, Date inicio, Date fim){
-        if(!alugado){
-            this.inicioA = inicio;
-            this.fimA = fim;
-            alugado = alug;
-            return true;
-        }
-        alugado = alug;
-        return false;
+    public String insert(){
+        return "("
+            + "\'"  + placa + "\'"
+            + ",\'" + filial + "\'"
+            + ",\'" + modelo + "\'"
+            + ",\'" + grupo + "\'"
+            + ",\'" + kmRodados + "\'"
+            + ",\'" + ultManutencao + "\'"
+            + ")";
     }
 }

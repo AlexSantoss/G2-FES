@@ -18,17 +18,17 @@
                         <Insets bottom="10.0" />
                     </VBox.margin>
                 </TextField>
-                <TextField fx:id="classe" promptText="Classe">
+                <TextField fx:id="grupo" promptText="Grupo">
                     <VBox.margin>
                         <Insets bottom="10.0" />
                     </VBox.margin>
                 </TextField>
-                <TextField fx:id="disponiveis" alignment="CENTER" promptText="Disponiveis">
+                <TextField fx:id="placa" alignment="CENTER" promptText="Placa">
                     <VBox.margin>
                         <Insets bottom="10.0" />
                     </VBox.margin>
                 </TextField>
-                <TextField fx:id="localO" alignment="CENTER" promptText="Filial de origem">
+                <TextField fx:id="filial" alignment="CENTER" promptText="Filial de origem">
                     <VBox.margin>
                         <Insets bottom="10.0" />
                     </VBox.margin>

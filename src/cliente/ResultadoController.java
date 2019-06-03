@@ -23,11 +23,9 @@ public class ResultadoController implements Initializable {
     @FXML
     TableColumn<ClienteModel, String> columnCPF;
     @FXML
-    TableColumn<ClienteModel, String> columnRua;
+    TableColumn<ClienteModel, String> columnNascimento;
     @FXML
-    TableColumn<ClienteModel, String> columnNum;
-    @FXML
-    TableColumn<ClienteModel, String> columnCEP;
+    TableColumn<ClienteModel, String> columnEmissaoCNH;
     @FXML
     TableView<ClienteModel> Tabela;
 
@@ -37,9 +35,8 @@ public class ResultadoController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         columnName.setCellValueFactory(new PropertyValueFactory<>("nome"));
         columnCPF.setCellValueFactory(new PropertyValueFactory<>("CPF"));
-        columnRua.setCellValueFactory(new PropertyValueFactory<>("rua"));
-        columnNum.setCellValueFactory(new PropertyValueFactory<>("num"));
-        columnCEP.setCellValueFactory(new PropertyValueFactory<>("CEP"));
+        columnNascimento.setCellValueFactory(new PropertyValueFactory<>("nascimento"));
+        columnEmissaoCNH.setCellValueFactory(new PropertyValueFactory<>("emissaoCNH"));
         Tabela.setItems(ol);
 
         busca(resourceBundle.getString("nome").toString());
@@ -50,17 +47,16 @@ public class ResultadoController implements Initializable {
         MySQL a = new MySQL();
         Connection con = a.getConexaoMySQL();
 
-        String query = "select * from cliente where nome like \"%" + nome + "%\"";
+        String query = "select * from Cliente where nome like \"%" + nome + "%\"";
         System.out.println(query);
         try {
             ResultSet rs = con.prepareStatement(query).executeQuery();
             while(rs.next()){
                 ol.add(new ClienteModel(
-                        rs.getString("nome"),
-                        rs.getString("cpf"),
-                        rs.getString("rua"),
-                        rs.getString("num"),
-                        rs.getString("cep")));
+                        rs.getString(2),
+                        rs.getString(1),
+                        rs.getString(3),
+                        rs.getString(4)));
             }
         } catch (SQLException e) {
             e.printStackTrace();
