@@ -76,18 +76,18 @@
                         </AnchorPane>
                   </content>
                 </TitledPane>
-                <TitledPane animated="false" text="Aluguel">
+                <TitledPane animated="false" prefWidth="284.0" text="Aluguel">
                   <content>
-                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="233.0" prefWidth="294.0">
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="205.0" prefWidth="282.0">
                            <children>
                               <HBox prefHeight="25.0" prefWidth="294.0">
                                  <children>
-                                    <Label text="Extensão de Prazo" translateX="30.0" translateY="3.0" />
+                                    <Label onMouseClicked="#handleAluguelVeiculo" text="Alugar Carro" translateX="30.0" translateY="3.0" />
                                  </children>
                               </HBox>
                               <HBox layoutY="178.0" prefHeight="25.0" prefWidth="294.0">
                                  <children>
-                                    <Label text="Desistência" translateX="30.0" translateY="3.0" />
+                                    <Label text="Programa de Fidelidade" translateX="30.0" translateY="3.0" />
                                  </children>
                               </HBox>
                               <HBox layoutY="153.0" prefHeight="25.0" prefWidth="294.0">
@@ -110,19 +110,14 @@
                                     <Label text="Alocar Carros" translateX="30.0" translateY="3.0" />
                                  </children>
                               </HBox>
-                              <HBox layoutY="50.0" prefHeight="25.0" prefWidth="294.0">
+                              <HBox layoutY="50.0" prefHeight="20.0" prefWidth="294.0">
                                  <children>
-                                    <Label text="Locação Imediata" translateX="30.0" translateY="3.0" />
+                                    <Label text="Desistência" translateX="30.0" translateY="3.0" />
                                  </children>
                               </HBox>
                               <HBox layoutY="25.0" prefHeight="25.0" prefWidth="294.0">
                                  <children>
-                                    <Label text="Reserva" translateX="30.0" translateY="3.0" />
-                                 </children>
-                              </HBox>
-                              <HBox layoutY="203.0" prefHeight="25.0" prefWidth="294.0">
-                                 <children>
-                                    <Label text="Programa de Fidelidade" translateX="30.0" translateY="3.0" />
+                                    <Label text="Extensão de Prazo" translateX="30.0" translateY="3.0" />
                                  </children>
                               </HBox>
                            </children>
@@ -176,6 +171,6 @@
             </Accordion>
          </children>
       </VBox>
-      <Pane fx:id="LoadPane" layoutX="277.0" prefHeight="445.0" prefWidth="581.0" />
+      <Pane fx:id="LoadPane" layoutX="278.0" prefHeight="445.0" prefWidth="398.0" />
    </children>
 </AnchorPane>

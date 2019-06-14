@@ -10,7 +10,7 @@ public class Core extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("ui/UI.fxml"));
 
         Scene scene = new Scene(root);
-
+        primaryStage.setTitle("Você Aluga - Aluguel de Carros");
         primaryStage.setScene(scene);
         primaryStage.show();
     }
