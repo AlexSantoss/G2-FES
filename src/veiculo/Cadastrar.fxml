@@ -33,7 +33,7 @@
                         <Insets bottom="10.0" />
                     </VBox.margin>
                 </TextField>
-                <Button mnemonicParsing="false" onAction="#handleButtonAction" text="Cadastrar" />
+                <Button mnemonicParsing="false" onAction="#handleCadastraVeiculo" text="Cadastrar" />
             </children>
             <opaqueInsets>
                 <Insets />

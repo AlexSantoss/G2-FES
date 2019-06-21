@@ -1,5 +1,6 @@
 package auxiliar;
 
+import static junit.framework.TestCase.fail;
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;

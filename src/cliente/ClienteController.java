@@ -34,8 +34,8 @@ public class ClienteController implements Initializable {
     private TextField campoNascimento;
     @FXML
     private TextField campoEmissaoCNH;
-    @FXML
 
+    @FXML
     private void handleButtonAction(ActionEvent event) {
         CPF cpf = null;
         try{
@@ -69,7 +69,7 @@ public class ClienteController implements Initializable {
             }
         };
         fxmlLoader.setResources(rb);
-        Parent root1 = (Parent) fxmlLoader.load();
+        Parent root1 = fxmlLoader.load();
         Stage stage = new Stage();
         stage.setScene(new Scene(root1));
         stage.show();

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView prefHeight="400.0" prefWidth="600.0">
+        <columns>
+          <TableColumn prefWidth="132.0" text="Modelo" />
+          <TableColumn prefWidth="133.0" text="Grupo" />
+            <TableColumn minWidth="0.0" prefWidth="180.0" text="Filial" />
+            <TableColumn prefWidth="154.0" text="Placa" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

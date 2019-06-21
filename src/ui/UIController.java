@@ -50,5 +50,13 @@ public class UIController implements Initializable {
 		if(LoadPane.getChildren().size() > 0) LoadPane.getChildren().remove(0);
 		LoadPane.getChildren().add(newPane);
 	}
-	
+
+	public void handleBuscaVeiculo() throws IOException {
+		Pane newPane = FXMLLoader.load(getClass().getResource("/veiculo/Consulta.fxml"));
+		if(LoadPane.getChildren().size()>0) LoadPane.getChildren().remove(0);
+		LoadPane.getChildren().add(newPane);
+
+	}
+
+
 }
