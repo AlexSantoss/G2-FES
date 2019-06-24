@@ -21,24 +21,9 @@
                   <Font size="25.0" />
                </font>
             </Text>
-            <TextField alignment="CENTER" promptText="Modelo">
+            <TextField alignment="CENTER" promptText="Modelo" fx:id="campoModelo">
                <VBox.margin>
                   <Insets />
-               </VBox.margin>
-            </TextField>
-            <TextField alignment="CENTER" promptText="Grupo">
-               <VBox.margin>
-                  <Insets top="5.0" />
-               </VBox.margin>
-            </TextField>
-            <TextField alignment="CENTER" promptText="Placa">
-               <VBox.margin>
-                  <Insets top="5.0" />
-               </VBox.margin>
-            </TextField>
-            <TextField alignment="CENTER" promptText="Filial">
-               <VBox.margin>
-                  <Insets top="5.0" />
                </VBox.margin>
             </TextField>
             <Button mnemonicParsing="false" text="Buscar" onAction="#resultadoBusca">

@@ -1,6 +1,5 @@
 package cliente;
 
-import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 
 public class ClienteModel {
@@ -9,7 +8,7 @@ public class ClienteModel {
     private SimpleStringProperty nascimento;
     private SimpleStringProperty emissaoCNH;
 
-    public ClienteModel(String nome, String CPF, String nascimento, String emissaoCNH){
+    ClienteModel(String nome, String CPF, String nascimento, String emissaoCNH){
         this.nome = new SimpleStringProperty(nome);
         this.CPF = new SimpleStringProperty(CPF);
         this.nascimento = new SimpleStringProperty(nascimento);

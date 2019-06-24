@@ -16,16 +16,10 @@ public class VeiculoController {
 
     @FXML
     private TextField campoModelo;
-    @FXML
-    private TextField campoGrupo;
-    @FXML
-    private TextField campoFlial;
-    @FXML
-    private TextField campoPlaca;
-
 
     @FXML
     private void resultadoBusca(ActionEvent e) throws IOException {
+        System.out.println("foi chamado");
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/veiculo/ResultadoBusca.fxml"));
         //OBS : não faço ideia do que seja isso
         ResourceBundle rb = new ResourceBundle() {
