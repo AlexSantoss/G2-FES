@@ -19,24 +19,24 @@ import java.util.ResourceBundle;
 
 public class ResultadoController implements Initializable {
     @FXML
-    TableColumn<ClienteModel, String> columnName;
+    TableColumn<Cliente, String> columnName;
     @FXML
-    TableColumn<ClienteModel, String> columnCPF;
+    TableColumn<Cliente, String> columnCPF;
     @FXML
-    TableColumn<ClienteModel, String> columnNascimento;
+    TableColumn<Cliente, String> columnNascimento;
     @FXML
-    TableColumn<ClienteModel, String> columnEmissaoCNH;
+    TableColumn<Cliente, String> columnEmissaoCNH;
     @FXML
-    TableView<ClienteModel> Tabela;
+    TableView<Cliente> Tabela;
 
-    ObservableList<ClienteModel> ol = FXCollections.observableArrayList();
+    ObservableList<Cliente> ol = FXCollections.observableArrayList();
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        columnName.setCellValueFactory(new PropertyValueFactory<>("nome"));
-        columnCPF.setCellValueFactory(new PropertyValueFactory<>("CPF"));
-        columnNascimento.setCellValueFactory(new PropertyValueFactory<>("nascimento"));
-        columnEmissaoCNH.setCellValueFactory(new PropertyValueFactory<>("emissaoCNH"));
+        columnName.setCellValueFactory(new PropertyValueFactory<>("nomeProperty"));
+        columnCPF.setCellValueFactory(new PropertyValueFactory<>("cpfProperty"));
+        columnNascimento.setCellValueFactory(new PropertyValueFactory<>("nascimentoProperty"));
+        columnEmissaoCNH.setCellValueFactory(new PropertyValueFactory<>("emissaoCNHProperty"));
         Tabela.setItems(ol);
 
         busca(resourceBundle.getString("nome"));
@@ -52,7 +52,7 @@ public class ResultadoController implements Initializable {
         try {
             ResultSet rs = con.prepareStatement(query).executeQuery();
             while(rs.next()){
-                ol.add(new ClienteModel(
+                ol.add(new Cliente(
                         rs.getString(2),
                         rs.getString(1),
                         rs.getString(3),

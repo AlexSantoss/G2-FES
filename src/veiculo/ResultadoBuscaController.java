@@ -1,7 +1,6 @@
 package veiculo;
 
 import bd.MySQL;
-import cliente.ClienteModel;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -19,13 +18,13 @@ import java.util.ResourceBundle;
 public class ResultadoBuscaController implements Initializable {
 
     @FXML
-    TableColumn<ClienteModel, String> columnModelo;
+    TableColumn<VeiculoModel, String> columnModelo;
     @FXML
-    TableColumn<ClienteModel, String> columnGrupo;
+    TableColumn<VeiculoModel, String> columnGrupo;
     @FXML
-    TableColumn<ClienteModel, String> columnFilial;
+    TableColumn<VeiculoModel, String> columnFilial;
     @FXML
-    TableColumn<ClienteModel, String> columnPlaca;
+    TableColumn<VeiculoModel, String> columnPlaca;
     @FXML
     TableView<VeiculoModel> Tabela;
 
