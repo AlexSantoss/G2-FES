@@ -9,9 +9,18 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
+<?import javafx.scene.text.Text?>
 <AnchorPane id="AnchorPane" prefHeight="371.0" prefWidth="311.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="veiculo.ReservaController">
     <children>
         <VBox alignment="CENTER" layoutX="65.0" layoutY="45.0" prefHeight="312.0" prefWidth="182.0">
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Alugar Carro">
+                <VBox.margin>
+                    <Insets bottom="10.0" />
+                </VBox.margin>
+                <font>
+                    <Font size="25.0" />
+                </font>
+            </Text>
             <children>
                 <TextField fx:id="cpf" alignment="CENTER" promptText="CPF">
                     <opaqueInsets>
@@ -42,10 +51,5 @@
                 <Insets />
             </opaqueInsets>
         </VBox>
-      <Label alignment="CENTER" layoutX="74.0" layoutY="30.0" prefHeight="30.0" prefWidth="164.0" text="Cadastrar Aluguel" textAlignment="CENTER">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Label>
     </children>
 </AnchorPane>

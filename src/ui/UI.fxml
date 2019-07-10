@@ -20,26 +20,26 @@
             </Label>
             <Accordion>
                <panes>
-                <TitledPane animated="false" text="Cliente">
+                <TitledPane text="Cliente">
                   <content>
-                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="103.0" prefWidth="294.0">
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="50.0" prefWidth="294.0">
                            <children>
                               <HBox onMouseClicked="#handleConsultaCliente" prefHeight="25.0" prefWidth="294.0">
                                  <children>
                                     <Label text="Informações" translateX="30.0" translateY="3.0" />
                                  </children>
                               </HBox>
-                              <HBox layoutY="25.0" prefHeight="25.0" prefWidth="294.0">
-                                 <children>
-                                    <Label text="Requisitar reservas" translateX="30.0" />
-                                 </children>
-                              </HBox>
-                              <HBox layoutY="50.0" prefHeight="25.0" prefWidth="294.0">
-                                 <children>
-                                    <Label text="Histórico" translateX="30.0" />
-                                 </children>
-                              </HBox>
-                              <HBox layoutY="78.0" onMouseClicked="#handleButtonAction" prefHeight="25.0" prefWidth="294.0">
+<!--                              <HBox layoutY="25.0" prefHeight="25.0" prefWidth="294.0">-->
+<!--                                 <children>-->
+<!--                                    <Label text="Requisitar reservas" translateX="30.0" />-->
+<!--                                 </children>-->
+<!--                              </HBox>-->
+<!--                              <HBox layoutY="50.0" prefHeight="25.0" prefWidth="294.0">-->
+<!--                                 <children>-->
+<!--                                    <Label text="Histórico" translateX="30.0" />-->
+<!--                                 </children>-->
+<!--                              </HBox>-->
+                              <HBox layoutY="25.0" onMouseClicked="#handleButtonAction" prefHeight="25.0" prefWidth="294.0">
                                  <children>
                                     <Label text="Cadastro" translateX="30.0" />
                                  </children>
@@ -48,83 +48,83 @@
                         </AnchorPane>
                   </content>
                 </TitledPane>
-                <TitledPane animated="false" text="Veículo">
+                <TitledPane text="Veículo">
                   <content>
-                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="114.0" prefWidth="294.0">
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="50.0" prefWidth="294.0">
                            <children>
+<!--                              <HBox prefHeight="25.0" prefWidth="294.0">-->
+<!--                                 <children>-->
+<!--                                    <Label text="Serviços de Manutenção" translateX="30.0" translateY="3.0" />-->
+<!--                                 </children>-->
+<!--                              </HBox>-->
                               <HBox prefHeight="25.0" prefWidth="294.0">
-                                 <children>
-                                    <Label text="Serviços de Manutenção" translateX="30.0" translateY="3.0" />
-                                 </children>
-                              </HBox>
-                              <HBox layoutY="25.0" prefHeight="25.0" prefWidth="294.0">
                                  <children>
                                     <Label onMouseClicked="#handleBuscaVeiculo" text="Informações" translateX="30.0" translateY="3.0" />
                                  </children>
                               </HBox>
-                              <HBox layoutY="78.0" prefHeight="25.0" prefWidth="294.0">
+                              <HBox layoutY="25.0" prefHeight="25.0" prefWidth="294.0">
                                  <children>
                                     <Label onMouseClicked="#handleCadastrarVeiculo" text="Cadastro" translateX="30.0" translateY="3.0" />
                                  </children>
                               </HBox>
-                              <HBox layoutY="50.0" prefHeight="25.0" prefWidth="294.0">
-                                 <children>
-                                    <Label text="Revisão" translateX="30.0" translateY="3.0" />
-                                 </children>
-                              </HBox>
+<!--                              <HBox layoutY="50.0" prefHeight="25.0" prefWidth="294.0">-->
+<!--                                 <children>-->
+<!--                                    <Label text="Revisão" translateX="30.0" translateY="3.0" />-->
+<!--                                 </children>-->
+<!--                              </HBox>-->
                            </children>
                         </AnchorPane>
                   </content>
                 </TitledPane>
-                <TitledPane animated="false" prefWidth="284.0" text="Aluguel">
+                <TitledPane prefWidth="284.0" text="Aluguel">
                   <content>
-                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="205.0" prefWidth="282.0">
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="50.0" prefWidth="282.0">
                            <children>
                               <HBox prefHeight="25.0" prefWidth="294.0">
                                  <children>
                                     <Label onMouseClicked="#handleAluguelVeiculo" text="Alugar Carro" translateX="30.0" translateY="3.0" />
                                  </children>
                               </HBox>
-                              <HBox layoutY="178.0" prefHeight="25.0" prefWidth="294.0">
-                                 <children>
-                                    <Label text="Programa de Fidelidade" translateX="30.0" translateY="3.0" />
-                                 </children>
-                              </HBox>
-                              <HBox layoutY="153.0" prefHeight="25.0" prefWidth="294.0">
-                                 <children>
-                                    <Label text="Upgrade/Downgrade" translateX="30.0" translateY="3.0" />
-                                 </children>
-                              </HBox>
-                              <HBox layoutY="128.0" prefHeight="25.0" prefWidth="294.0">
-                                 <children>
-                                    <Label text="Devolução de Carros" translateX="30.0" translateY="3.0" />
-                                 </children>
-                              </HBox>
-                              <HBox layoutY="103.0" prefHeight="25.0" prefWidth="294.0">
-                                 <children>
-                                    <Label text="Transferência de Carros" translateX="30.0" translateY="3.0" />
-                                 </children>
-                              </HBox>
-                              <HBox layoutY="78.0" prefHeight="25.0" prefWidth="294.0">
-                                 <children>
-                                    <Label text="Alocar Carros" translateX="30.0" translateY="3.0" />
-                                 </children>
-                              </HBox>
-                              <HBox layoutY="50.0" prefHeight="20.0" prefWidth="294.0">
-                                 <children>
-                                    <Label text="Desistência" translateX="30.0" translateY="3.0" />
-                                 </children>
-                              </HBox>
+<!--                              <HBox layoutY="178.0" prefHeight="25.0" prefWidth="294.0">-->
+<!--                                 <children>-->
+<!--                                    <Label text="Programa de Fidelidade" translateX="30.0" translateY="3.0" />-->
+<!--                                 </children>-->
+<!--                              </HBox>-->
+<!--                              <HBox layoutY="153.0" prefHeight="25.0" prefWidth="294.0">-->
+<!--                                 <children>-->
+<!--                                    <Label text="Upgrade/Downgrade" translateX="30.0" translateY="3.0" />-->
+<!--                                 </children>-->
+<!--                              </HBox>-->
                               <HBox layoutY="25.0" prefHeight="25.0" prefWidth="294.0">
                                  <children>
-                                    <Label text="Extensão de Prazo" translateX="30.0" translateY="3.0" />
+                                    <Label onMouseClicked="#handleDevolucaoVeiculo" text="Devolução de Carros" translateX="30.0" translateY="3.0" />
                                  </children>
                               </HBox>
+<!--                              <HBox layoutY="103.0" prefHeight="25.0" prefWidth="294.0">-->
+<!--                                 <children>-->
+<!--                                    <Label text="Transferência de Carros" translateX="30.0" translateY="3.0" />-->
+<!--                                 </children>-->
+<!--                              </HBox>-->
+<!--                              <HBox layoutY="78.0" prefHeight="25.0" prefWidth="294.0">-->
+<!--                                 <children>-->
+<!--                                    <Label text="Alocar Carros" translateX="30.0" translateY="3.0" />-->
+<!--                                 </children>-->
+<!--                              </HBox>-->
+<!--                              <HBox layoutY="50.0" prefHeight="20.0" prefWidth="294.0">-->
+<!--                                 <children>-->
+<!--                                    <Label text="Desistência" translateX="30.0" translateY="3.0" />-->
+<!--                                 </children>-->
+<!--                              </HBox>-->
+<!--                              <HBox layoutY="25.0" prefHeight="25.0" prefWidth="294.0">-->
+<!--                                 <children>-->
+<!--                                    <Label text="Extensão de Prazo" translateX="30.0" translateY="3.0" />-->
+<!--                                 </children>-->
+<!--                              </HBox>-->
                            </children>
                         </AnchorPane>
                   </content>
                 </TitledPane>
-                  <TitledPane animated="false" layoutX="10.0" layoutY="60.0" text="Financeiro">
+                  <TitledPane layoutX="10.0" layoutY="60.0" text="Financeiro">
                      <content>
                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                            <children>

@@ -58,5 +58,11 @@ public class UIController implements Initializable {
 
 	}
 
+	public void handleDevolucaoVeiculo() throws IOException{
+		Pane newPane = FXMLLoader.load(getClass().getResource("/aluguel/Devolucao.fxml"));
+		if(LoadPane.getChildren().size()>0) LoadPane.getChildren().remove(0);
+		LoadPane.getChildren().add(newPane);
+	}
+
 
 }
