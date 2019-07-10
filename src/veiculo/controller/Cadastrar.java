@@ -1,4 +1,4 @@
-package veiculo;
+package veiculo.controller;
 
 import auxiliar.Address;
 import auxiliar.CPF;
@@ -12,6 +12,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TextField;
+import veiculo.model.Veiculo;
 
 /**
  * Controlador da tela de cadastro de novos veículos.

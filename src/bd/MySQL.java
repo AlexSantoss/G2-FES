@@ -1,10 +1,10 @@
 package bd;
 
-import veiculo.Veiculo;
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+
+import veiculo.model.Veiculo;
 
 /**
  * Essa classe é usada para realizar operações com o banco de dados.

@@ -1,4 +1,4 @@
-package veiculo;
+package veiculo.controller;
 
 import bd.MySQL;
 import javafx.collections.FXCollections;
@@ -8,6 +8,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import veiculo.model.VeiculoModel;
 
 import java.net.URL;
 import java.sql.Connection;

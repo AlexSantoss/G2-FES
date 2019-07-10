@@ -1,4 +1,4 @@
-package veiculo;
+package veiculo.model;
 
 import auxiliar.Address;
 

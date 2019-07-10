@@ -1,4 +1,4 @@
-package veiculo;
+package veiculo.controller;
 
 import auxiliar.CPF;
 import bd.MySQL;

@@ -1,4 +1,4 @@
-package veiculo;
+package veiculo.model;
 
 import javafx.beans.property.SimpleStringProperty;
 
@@ -11,7 +11,7 @@ public class VeiculoModel {
     private int kmRodados;
 
 
-    VeiculoModel(String placa, String filial, String modelo, String grupo, String ultManutencao){
+    public VeiculoModel(String placa, String filial, String modelo, String grupo, String ultManutencao){
         this.placa = new SimpleStringProperty(placa);
         this.filial = new SimpleStringProperty(filial);
         this.modelo = new SimpleStringProperty(modelo);

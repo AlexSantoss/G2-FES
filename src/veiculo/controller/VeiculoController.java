@@ -1,4 +1,4 @@
-package veiculo;
+package veiculo.controller;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -24,7 +24,7 @@ public class VeiculoController {
     @FXML
     private void resultadoBusca(ActionEvent e) throws IOException {
         System.out.println("foi chamado");
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/veiculo/ResultadoBusca.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/veiculo/view/ResultadoBusca.fxml"));
         //OBS : não faço ideia do que seja isso
         ResourceBundle rb = new ResourceBundle() {
             @Override
