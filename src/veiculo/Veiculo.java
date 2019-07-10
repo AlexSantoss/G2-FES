@@ -28,6 +28,8 @@ public class Veiculo {
         this.kmRodados = 0;
         this.ultManutencao = "2019-06-03";
     }
+    
+    public String getPlaca() { return placa; }
 
     public String insert(){
         return "("

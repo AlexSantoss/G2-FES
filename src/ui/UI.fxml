@@ -140,7 +140,7 @@
                               </HBox>
                               <HBox layoutY="128.0" prefHeight="25.0" prefWidth="294.0">
                                  <children>
-                                    <Label text="Venda de Carros" translateX="30.0" translateY="3.0" />
+                                    <Label onMouseClicked="#handleVendaDeCarros" text="Venda de Carros" translateX="30.0" translateY="3.0" />
                                  </children>
                               </HBox>
                               <HBox layoutY="103.0" prefHeight="25.0" prefWidth="294.0">

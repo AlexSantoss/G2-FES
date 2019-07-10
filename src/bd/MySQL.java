@@ -60,6 +60,22 @@ public class MySQL {
             e.printStackTrace();
         }
     }
+    
+    public void delete(String placa) {
+    	String query = "DELETE FROM Veiculo WHERE placa='" + placa + "'";
+        Connection con = getConexaoMySQL();
+        try {
+            con.prepareStatement(query).execute();
+            FecharConexao();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    	
+    }
+    
+    public void delete(Veiculo v) {
+    	delete(v.getPlaca());
+    }
 
 
     public String statusConection() {
