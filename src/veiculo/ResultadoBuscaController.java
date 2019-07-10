@@ -15,6 +15,10 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
 
+/**
+ * Controlador da tela de resultados da busca por veículos.
+ *
+ */
 public class ResultadoBuscaController implements Initializable {
 
     @FXML

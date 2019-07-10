@@ -13,6 +13,10 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TextField;
 
+/**
+ * Controlador da tela de cadastro de novos veículos.
+ *
+ */
 public class Cadastrar implements Initializable {
 
 	@FXML

@@ -6,12 +6,23 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
+/**
+ * Essa classe é usada para realizar operações com o banco de dados.
+ * 
+ * @author Alex
+ *
+ */
 public class MySQL {
 
     public static String status = "NÃ£o conectou...";
 
     public MySQL() {}
 
+    /**
+     * Esse método cria uma conexão local com o banco de dados usando MySql.
+     * 
+     * @return objeto Connection (uma conexão com o banco de dados).
+     */
     public Connection getConexaoMySQL() {
 
         Connection connection = null;

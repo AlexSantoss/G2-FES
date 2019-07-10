@@ -17,6 +17,10 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
 
+/**
+ * Controlador da tela de resultados da busca por cliente.
+ *
+ */
 public class ResultadoController implements Initializable {
     @FXML
     TableColumn<Cliente, String> columnName;

@@ -5,6 +5,12 @@ import auxiliar.Address;
 import java.sql.Date;
 import java.util.Calendar;
 
+/**
+ * Essa classe representa um veículo da franquia.
+ *
+ * @author Alex
+ *
+ */
 public class Veiculo {
     private String placa;
     private String filial;

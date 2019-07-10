@@ -12,6 +12,10 @@ import java.io.IOException;
 import java.util.Enumeration;
 import java.util.ResourceBundle;
 
+/**
+ * Controlador da tela de busca por véiculos. A tela de resultados é controlada por ResultadoBuscaController.
+ *
+ */
 public class VeiculoController {
 
     @FXML
