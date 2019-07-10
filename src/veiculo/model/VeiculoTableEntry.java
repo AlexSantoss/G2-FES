@@ -2,7 +2,13 @@ package veiculo.model;
 
 import javafx.beans.property.SimpleStringProperty;
 
-public class VeiculoModel {
+/**
+ * Usada por ResultadoBuscaController para exibir valores na tabela de veículos.
+ * 
+ * @author Alex
+ *
+ */
+public class VeiculoTableEntry {
     private SimpleStringProperty placa;
     private SimpleStringProperty filial;
     private SimpleStringProperty modelo;
@@ -11,7 +17,7 @@ public class VeiculoModel {
     private int kmRodados;
 
 
-    public VeiculoModel(String placa, String filial, String modelo, String grupo, String ultManutencao){
+    public VeiculoTableEntry(String placa, String filial, String modelo, String grupo, String ultManutencao){
         this.placa = new SimpleStringProperty(placa);
         this.filial = new SimpleStringProperty(filial);
         this.modelo = new SimpleStringProperty(modelo);

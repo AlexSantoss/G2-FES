@@ -12,6 +12,10 @@ import java.sql.ResultSet;
 import java.time.LocalDate;
 import java.util.ResourceBundle;
 
+/**
+ * Controla a tela de devolução de veículos que já estão alugados.
+ *
+ */
 public class Devolucao implements Initializable {
 
     public TextField cpf;
@@ -22,12 +26,16 @@ public class Devolucao implements Initializable {
 
     }
 
+    /**
+     * Esse método é executado quando o botão para devolver o carro é pressionado.
+     */
     public void devolver(){
         try{
             MySQL a = new MySQL();
             Connection con = a.getConexaoMySQL();
 
-            String insert = "update Aluguel set retorno = ? where placa = ? and cpf = ?";
+            // Só haverá um aluguel que ainda não foi encerrado (retorno é nulo) relacionado ao carro em questão.
+            String insert = "update Aluguel set retorno = ? where retorno is null and placa = ?";
 
             System.out.println(placa.getText());
 

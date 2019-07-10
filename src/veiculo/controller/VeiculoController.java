@@ -25,7 +25,6 @@ public class VeiculoController {
     private void resultadoBusca(ActionEvent e) throws IOException {
         System.out.println("foi chamado");
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/veiculo/view/ResultadoBusca.fxml"));
-        //OBS : não faço ideia do que seja isso
         ResourceBundle rb = new ResourceBundle() {
             @Override
             protected Object handleGetObject(String key) {

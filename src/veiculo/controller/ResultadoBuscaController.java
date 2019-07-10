@@ -8,7 +8,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
-import veiculo.model.VeiculoModel;
+import veiculo.model.VeiculoTableEntry;
 
 import java.net.URL;
 import java.sql.Connection;
@@ -23,17 +23,17 @@ import java.util.ResourceBundle;
 public class ResultadoBuscaController implements Initializable {
 
     @FXML
-    TableColumn<VeiculoModel, String> columnModelo;
+    TableColumn<VeiculoTableEntry, String> columnModelo;
     @FXML
-    TableColumn<VeiculoModel, String> columnGrupo;
+    TableColumn<VeiculoTableEntry, String> columnGrupo;
     @FXML
-    TableColumn<VeiculoModel, String> columnFilial;
+    TableColumn<VeiculoTableEntry, String> columnFilial;
     @FXML
-    TableColumn<VeiculoModel, String> columnPlaca;
+    TableColumn<VeiculoTableEntry, String> columnPlaca;
     @FXML
-    TableView<VeiculoModel> Tabela;
+    TableView<VeiculoTableEntry> Tabela;
 
-    ObservableList<VeiculoModel> ol = FXCollections.observableArrayList();
+    ObservableList<VeiculoTableEntry> ol = FXCollections.observableArrayList();
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -55,7 +55,7 @@ public class ResultadoBuscaController implements Initializable {
         try {
             ResultSet rs = con.prepareStatement(query).executeQuery();
             while(rs.next()){
-                ol.add(new VeiculoModel(
+                ol.add(new VeiculoTableEntry(
                         rs.getString(1),
                         rs.getString(2),
                         rs.getString(3),

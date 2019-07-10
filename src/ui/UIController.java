@@ -13,6 +13,10 @@ import javafx.scene.layout.*;
 import cliente.*;
 
 
+/**
+ * Controlador do menu principal (à esquerda da janela do aplicativo).
+ *
+ */
 public class UIController implements Initializable {
 
 	@FXML

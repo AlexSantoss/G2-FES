@@ -31,6 +31,9 @@ public class Veiculo {
     
     public String getPlaca() { return placa; }
 
+    /**
+     * @return string para ser usada em inserção na tabela SQL. Contém todas as colunas na order (placa,filial,modelo,grupo,kmRodados,ultManutencao).
+     */
     public String insert(){
         return "("
             + "\'"  + placa + "\'"

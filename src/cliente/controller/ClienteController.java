@@ -25,6 +25,12 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 
+/**
+ * Controlador do cadastro de novos clientes e da busca de clientes na base de dados.
+ * 
+ * @author Alex
+ *
+ */
 public class ClienteController implements Initializable {
 
     @FXML
@@ -36,6 +42,9 @@ public class ClienteController implements Initializable {
     @FXML
     private TextField campoEmissaoCNH;
 
+    /**
+     * Método chamado ao clicar o botão de cadastrar um novo cliente.
+     */
     @FXML
     private void handleButtonAction(ActionEvent event) {
         CPF cpf = null;
@@ -54,6 +63,9 @@ public class ClienteController implements Initializable {
         }
 
     }
+    /**
+     * Método chamado ao clicar no botão para buscar um cliente já existente.
+     */
     @FXML
     private void retornaBusca(ActionEvent event) throws IOException {
 
@@ -78,6 +90,8 @@ public class ClienteController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+    	
+    	// Adicionar listner que updata automaticamente o campo do CPF, para evitar que o usuário precise digitar pontos ou hífens.
         campoCPF.textProperty().addListener((observable, oldValue, newValue) -> {
             if(newValue.length() > 14){
                 campoCPF.setText(oldValue);
