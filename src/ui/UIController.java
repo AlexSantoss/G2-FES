@@ -65,7 +65,7 @@ public class UIController implements Initializable {
 	}
 	
 	public void handleVendaDeCarros() throws IOException{
-		Pane newPane = FXMLLoader.load(getClass().getResource("/financeiro/Venda.fxml"));
+		Pane newPane = FXMLLoader.load(getClass().getResource("/financeiro/view/Venda.fxml"));
 		if(LoadPane.getChildren().size()>0) LoadPane.getChildren().remove(0);
 		LoadPane.getChildren().add(newPane);
 	}

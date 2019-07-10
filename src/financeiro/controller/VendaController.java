@@ -1,4 +1,4 @@
-package financeiro;
+package financeiro.controller;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
