@@ -46,7 +46,7 @@ public class UIController implements Initializable {
 	}
 	
 	public void handleAluguelVeiculo() throws IOException{
-		Pane newPane =  FXMLLoader.load(getClass().getResource("/veiculo/view/Reserva.fxml"));
+		Pane newPane =  FXMLLoader.load(getClass().getResource("/aluguel/view/Reserva.fxml"));
 		if(LoadPane.getChildren().size() > 0) LoadPane.getChildren().remove(0);
 		LoadPane.getChildren().add(newPane);
 	}
@@ -59,7 +59,7 @@ public class UIController implements Initializable {
 	}
 
 	public void handleDevolucaoVeiculo() throws IOException{
-		Pane newPane = FXMLLoader.load(getClass().getResource("/aluguel/Devolucao.fxml"));
+		Pane newPane = FXMLLoader.load(getClass().getResource("/aluguel/view/Devolucao.fxml"));
 		if(LoadPane.getChildren().size()>0) LoadPane.getChildren().remove(0);
 		LoadPane.getChildren().add(newPane);
 	}

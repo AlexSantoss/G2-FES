@@ -1,4 +1,4 @@
-package aluguel;
+package aluguel.controller;
 
 import bd.MySQL;
 import javafx.fxml.Initializable;

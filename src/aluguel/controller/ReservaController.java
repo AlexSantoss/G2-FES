@@ -1,4 +1,4 @@
-package veiculo.controller;
+package aluguel.controller;
 
 import auxiliar.CPF;
 import bd.MySQL;
