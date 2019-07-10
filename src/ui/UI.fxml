@@ -126,41 +126,12 @@
                 </TitledPane>
                   <TitledPane layoutX="10.0" layoutY="60.0" text="Financeiro">
                      <content>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="46.0" prefWidth="282.0">
                            <children>
+                              <HBox prefHeight="25.0" prefWidth="294.0" />
                               <HBox prefHeight="25.0" prefWidth="294.0">
                                  <children>
-                                    <Label text="Impostos Locais" translateX="30.0" translateY="3.0" />
-                                 </children>
-                              </HBox>
-                              <HBox layoutY="154.0" prefHeight="25.0" prefWidth="294.0">
-                                 <children>
-                                    <Label text="Locação Grátis" translateX="30.0" translateY="3.0" />
-                                 </children>
-                              </HBox>
-                              <HBox layoutY="128.0" prefHeight="25.0" prefWidth="294.0">
-                                 <children>
                                     <Label onMouseClicked="#handleVendaDeCarros" text="Venda de Carros" translateX="30.0" translateY="3.0" />
-                                 </children>
-                              </HBox>
-                              <HBox layoutY="103.0" prefHeight="25.0" prefWidth="294.0">
-                                 <children>
-                                    <Label text="Atraso" translateX="30.0" translateY="3.0" />
-                                 </children>
-                              </HBox>
-                              <HBox layoutY="78.0" prefHeight="25.0" prefWidth="294.0">
-                                 <children>
-                                    <Label text="Antecipado" translateX="30.0" translateY="3.0" />
-                                 </children>
-                              </HBox>
-                              <HBox layoutY="50.0" prefHeight="25.0" prefWidth="294.0">
-                                 <children>
-                                    <Label text="Taxa de Retorno" translateX="30.0" translateY="3.0" />
-                                 </children>
-                              </HBox>
-                              <HBox layoutY="25.0" prefHeight="25.0" prefWidth="294.0">
-                                 <children>
-                                    <Label text="Pagamento" translateX="30.0" translateY="3.0" />
                                  </children>
                               </HBox>
                            </children>
