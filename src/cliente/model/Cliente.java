@@ -1,4 +1,4 @@
-package cliente;
+package cliente.model;
 
 import auxiliar.CPF;
 import javafx.beans.property.SimpleStringProperty;
@@ -64,14 +64,14 @@ public class Cliente {
     private String emissaoCNH;
 
 
-    Cliente(String name, CPF cpf, String nascimento, String emissaoCNH){
+    public Cliente(String name, CPF cpf, String nascimento, String emissaoCNH){
         setName(name);
         setCPF(cpf);
         setNascimento(nascimento);
         setEmissaoCNH(emissaoCNH);
     }
 
-    Cliente(String nome, String CPF, String nascimento, String emissaoCNH){
+    public Cliente(String nome, String CPF, String nascimento, String emissaoCNH){
         this.nomeProperty = new SimpleStringProperty(nome);
         this.cpfProperty = new SimpleStringProperty(CPF);
         this.nascimentoProperty = new SimpleStringProperty(nascimento);

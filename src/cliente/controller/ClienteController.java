@@ -1,4 +1,4 @@
-package cliente;
+package cliente.controller;
 
 import auxiliar.Address;
 import auxiliar.CPF;
@@ -12,6 +12,7 @@ import java.util.Enumeration;
 import java.util.ResourceBundle;
 
 import bd.MySQL;
+import cliente.model.Cliente;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -56,7 +57,7 @@ public class ClienteController implements Initializable {
     @FXML
     private void retornaBusca(ActionEvent event) throws IOException {
 
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/cliente/ResultadoBusca.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/cliente/view/ResultadoBusca.fxml"));
         ResourceBundle rb = new ResourceBundle() {
             @Override
             protected Object handleGetObject(String key) {

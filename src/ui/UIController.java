@@ -21,7 +21,7 @@ public class UIController implements Initializable {
 	
 	@FXML
 	private void handleButtonAction() throws IOException {
-		Pane newPane =  FXMLLoader.load(getClass().getResource("/cliente/Cliente.fxml"));
+		Pane newPane =  FXMLLoader.load(getClass().getResource("/cliente/view/Cliente.fxml"));
 		if(LoadPane.getChildren().size() > 0) LoadPane.getChildren().remove(0);
 		LoadPane.getChildren().add(newPane);
 	}
@@ -40,7 +40,7 @@ public class UIController implements Initializable {
 	}
 
 	public void handleConsultaCliente() throws IOException{
-		Pane newPane =  FXMLLoader.load(getClass().getResource("/cliente/Consulta.fxml"));
+		Pane newPane =  FXMLLoader.load(getClass().getResource("/cliente/view/Consulta.fxml"));
 		if(LoadPane.getChildren().size() > 0) LoadPane.getChildren().remove(0);
 		LoadPane.getChildren().add(newPane);
 	}

@@ -1,6 +1,7 @@
-package cliente;
+package cliente.controller;
 
 import bd.MySQL;
+import cliente.model.Cliente;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;

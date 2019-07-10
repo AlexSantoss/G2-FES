@@ -2,7 +2,7 @@ package veiculo;
 
 import auxiliar.CPF;
 import bd.MySQL;
-import cliente.Cliente;
+import cliente.model.Cliente;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.DatePicker;
